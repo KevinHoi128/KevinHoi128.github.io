@@ -60,6 +60,7 @@ export default {
   },
   mounted() {
     this.resetCaret()
+    this.$refs.input[0].focus()
   },
   methods: {
     onInput(val, index) {

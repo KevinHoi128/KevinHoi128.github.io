@@ -4,16 +4,14 @@
       <v-row v-if="!isCorrectPassword" justify="center" align="center">
         <v-card elevation="2" outlined>
           <v-col cols="auto">
+            <v-card-title class="pb-0 justify-center font-weight-bold"
+              >輸入密碼以查看履歷</v-card-title
+            >
             <verify-input-field ref="verifyField" @emitCode="checkPassword" />
 
             <v-col cols="auto" class="text-center">
               提示: 本日日期 (MM/DD)
             </v-col>
-            <!-- <v-col cols="auto">
-              <v-btn color="primary" elevation="5" large @click="checkPassword"
-                >確認</v-btn
-              >
-            </v-col> -->
           </v-col>
         </v-card>
       </v-row>
