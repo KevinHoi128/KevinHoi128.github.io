@@ -37,7 +37,7 @@
         tabindex="0"
         @click.stop="drawer = !drawer"
       />
-      <v-toolbar-title aria-label="Kevin's Testing Site"
+      <v-toolbar-title aria-label="Kevin's Testing Site" class="typing"
         >Kevin's Testing Site</v-toolbar-title
       >
 
@@ -97,3 +97,34 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.typing {
+  width: 6ch;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-family: monospace;
+  animation: typing 5s steps(25, jump-none) infinite, mouse 1s step-end infinite;
+  border-right: 0.1em solid;
+}
+
+@keyframes typing {
+  from {
+    width: 1ch;
+  }
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes mouse {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+</style>
