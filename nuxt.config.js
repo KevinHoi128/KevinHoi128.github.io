@@ -1,11 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
 
-const routerBase = process.env.DEPLOY_ENV === "GH_PAGES" ? {
-  router: {
-    base: '/KevinHoi128.github.io'
-  }
+// const routerBase = process.env.DEPLOY_ENV === "GH_PAGES" ? {
+//   router: {
+//     base: '/KevinHoi128.github.io'
+//   }
 
-} : {}
+// } : {}
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -16,8 +16,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - kwebsite',
-    title: 'kwebsite',
+    titleTemplate: '%s - K-Website',
+    title: 'Hi',
     htmlAttrs: {
       lang: 'en'
     },
@@ -83,6 +83,9 @@ export default {
   build: {
   },
 
-  ...routerBase
+  // ...routerBase
+  // router: {
+  //   base: '/KevinHoi128.github.io/'
+  // }
 
 }

@@ -7,10 +7,10 @@
         </v-card-title>
       </v-card>
       <v-list dense>
-        <v-list-item
+        <!-- <v-list-item
           link
           to="/livingExpensesDemo"
-          aria-label="Press enter to Accessibility Web"
+          aria-label="Live expense demo"
           tabindex="0"
         >
           <v-list-item-action>
@@ -18,6 +18,14 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>生活繳費Demo</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item> -->
+        <v-list-item link to="/resume" aria-label="Resume" tabindex="1">
+          <v-list-item-action>
+            <v-icon color="white darken-2">mdi-text-box-outline</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>履歷表</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -77,7 +85,10 @@ export default {
   data: () => ({
     drawer: null,
     darkMode: true,
-    soms: [{ icon: 'mdi-github', href: 'https://github.com/KevinHoi128' }],
+    soms: [
+      { icon: 'mdi-github', href: 'https://github.com/KevinHoi128' },
+      { icon: 'mdi-git', href: 'https://gitee.com/kh128' },
+    ],
   }),
   watch: {
     darkMode() {
