@@ -7,7 +7,7 @@
             <v-card-title class="pb-0 justify-center font-weight-bold"
               >輸入密碼以查看履歷</v-card-title
             >
-            <verify-input-field ref="verifyField" @emitCode="checkPassword" />
+            <Verify-input-field ref="verifyField" @emitCode="checkPassword" />
 
             <v-col cols="auto" class="text-center">
               提示: 本日日期 (MM/DD)
@@ -15,8 +15,12 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row v-if="isCorrectPassword" justify="center" align="center">
-        <v-col cols="auto"> ABC </v-col>
+
+      <!-- v-if="isCorrectPassword" -->
+      <v-row justify="center" align="center">
+        <v-col cols="auto">
+          <Resume-time-line></Resume-time-line>
+        </v-col>
       </v-row>
 
       <v-snackbar
@@ -70,10 +74,12 @@
 </template>
 
 <script>
-import verifyInputField from '@/components/forms/verifyInputField'
+import VerifyInputField from '@/components/forms/verifyInputField'
+import ResumeTimeLine from '@/components/resumeTimeLine'
 export default {
   components: {
-    verifyInputField,
+    VerifyInputField,
+    ResumeTimeLine,
   },
   data() {
     return {

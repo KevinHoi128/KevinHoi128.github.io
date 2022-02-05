@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" app clipped>
-      <v-card height="auto">
-        <v-card-title>
-          <v-icon> fas fa-list-alt </v-icon>&nbsp;&nbsp;MENU
+      <v-card>
+        <v-card-title class="home" @click="backToHome">
+          <v-icon> mdi-home </v-icon>&nbsp;&nbsp;Home
         </v-card-title>
       </v-card>
       <v-list dense>
@@ -31,12 +31,13 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left>
+    <v-app-bar app clipped-left elevation="10">
       <v-app-bar-nav-icon
         aria-label="Click this to expand the menu option."
         tabindex="0"
         @click.stop="drawer = !drawer"
       />
+
       <v-toolbar-title aria-label="Kevin's Testing Site" class="typing"
         >Kevin's Testing Site</v-toolbar-title
       >
@@ -61,6 +62,7 @@
             v-for="som in soms"
             :key="som.icon"
             :href="som.href"
+            target="_blank"
             class="mx-4 white--text"
             icon
             tabindex="0"
@@ -88,11 +90,21 @@ export default {
     soms: [
       { icon: 'mdi-github', href: 'https://github.com/KevinHoi128' },
       { icon: 'mdi-git', href: 'https://gitee.com/kh128' },
+      {
+        icon: 'mdi-codepen',
+        href: 'https://codepen.io/kevinhoi128-the-encoder',
+      },
     ],
   }),
   watch: {
     darkMode() {
       this.$vuetify.theme.dark = this.darkMode
+    },
+  },
+  methods: {
+    backToHome() {
+      this.$router.push('/')
+      this.drawer = false
     },
   },
 }
@@ -103,10 +115,14 @@ export default {
   width: 6ch;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: monospace;
   animation: typing 5s steps(25, jump-none) infinite, mouse 1s step-end infinite;
   border-right: 0.1em solid;
+}
+
+.home {
+  cursor: pointer;
 }
 
 @keyframes typing {
