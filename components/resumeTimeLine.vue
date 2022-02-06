@@ -241,23 +241,19 @@
                     </v-card-title>
 
                     <v-card-text>
-                      <v-img src="/img/ipim/IPIM-VoicReco.png" class="mt-8">
-                      </v-img>
+                      <v-img src="/img/IPIM-VoicReco.png" class="mt-8"> </v-img>
                       <div class="text-center mb-8">
                         <i>網站無障礙功能 - 語音朗讀</i>
                       </div>
 
-                      <v-img
-                        src="/img/ipim/IPIM-online-calculator.png"
-                        class="mt-8"
-                      >
+                      <v-img src="/img/IPIM-online-calculator.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>線上模擬計算器</i>
                       </div>
 
                       <v-img
-                        src="/img/ipim/IPIM-online-calculator-detail.png"
+                        src="/img/IPIM-online-calculator-detail.png"
                         class="mt-8"
                       >
                       </v-img>
@@ -265,22 +261,18 @@
                         <i>線上模擬計算器-計算</i>
                       </div>
 
-                      <v-img src="/img/ipim/IPIM-Map.png" class="mt-8"> </v-img>
+                      <v-img src="/img/IPIM-Map.png" class="mt-8"> </v-img>
                       <div class="text-center mb-8">
                         <i>大灣區頁面地圖</i>
                       </div>
 
-                      <v-img
-                        src="/img/ipim/IPIM-Map-DoubleBind.png"
-                        class="mt-8"
-                      >
+                      <v-img src="/img/IPIM-Map-DoubleBind.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>大灣區頁面地圖-雙向響應</i>
                       </div>
 
-                      <v-img src="/img/ipim/IPIM-Botsify.png" class="mt-8">
-                      </v-img>
+                      <v-img src="/img/IPIM-Botsify.png" class="mt-8"> </v-img>
                       <div class="text-center mb-8">
                         <i>聊天機械人客服</i>
                       </div>
@@ -308,6 +300,7 @@
                       負責<a
                         href="https://investhere.ipim.gov.mo/macau/resources/calculator/calculator_online-mo/"
                         target="_blank"
+                        class="a-yellow"
                         >線上模擬計算器</a
                       >的開發。
                     </li>
@@ -315,6 +308,7 @@
                       以Vue.js及SVG開發<a
                         href="https://investhere.ipim.gov.mo/gba/"
                         target="_blank"
+                        class="a-yellow"
                         >大灣區頁面地圖</a
                       >並實現雙向響應功能。
                     </li>
@@ -368,6 +362,7 @@
                                     <a
                                       href="https://fs-dev.shoppoint.xyz"
                                       target="_blank"
+                                      class="a-yellow"
                                       >Flash sale store</a
                                     >
                                   </p>
@@ -375,6 +370,7 @@
                                     <a
                                       href="https://alpha.shoppoint.xyz/"
                                       target="_blank"
+                                      class="a-yellow"
                                       >Webstore</a
                                     >
                                   </p>
@@ -382,6 +378,7 @@
                                     <a
                                       href="https://dev-sp-merchant.alphasolution.com.mo/login"
                                       target="_blank"
+                                      class="a-yellow"
                                       >Merchant-portal</a
                                     >
                                   </p>
@@ -389,6 +386,7 @@
                                     <a
                                       href="http://dev-sp-admin.alphasolution.com.mo/login"
                                       target="_blank"
+                                      class="a-yellow"
                                       >Admin-portal</a
                                     >
                                   </p>
@@ -414,14 +412,14 @@
                     </v-card-title>
 
                     <v-card-text>
-                      <v-img src="/img/sp/SP-product-index.png" class="mt-8">
+                      <v-img src="/img/SP-product-index.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-產品首頁</i>
                       </div>
 
                       <v-img
-                        src="/img/sp/SP-product-realtime-storage.png"
+                        src="/img/SP-product-realtime-storage.png"
                         class="mt-8"
                       >
                       </v-img>
@@ -429,14 +427,14 @@
                         <i>商家後台-實時庫存</i>
                       </div>
 
-                      <v-img src="/img/sp/SP-product-QRcode.png" class="mt-8">
+                      <v-img src="/img/SP-product-QRcode.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-產品QRCODE</i>
                       </div>
 
                       <v-img
-                        src="/img/sp/SP-product-QRcodeChangeByReferrerLink.png"
+                        src="/img/SP-product-QRcodeChangeByReferrerLink.png"
                         class="mt-8"
                       >
                       </v-img>
@@ -444,19 +442,19 @@
                         <i>商家後台-產品QRCODE隨推薦人改變</i>
                       </div>
 
-                      <v-img src="/img/sp/SP-generate-JSON.png" class="mt-8">
+                      <v-img src="/img/SP-generate-JSON.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-生成靜態JSON資料</i>
                       </div>
 
-                      <v-img src="/img/sp/SP-webstore-getJson.png" class="mt-8">
+                      <v-img src="/img/SP-webstore-getJson.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>網店首頁-Get JSON資料渲染網頁</i>
                       </div>
 
-                      <v-img src="/img/sp/SP-webstore-getQty.png" class="mt-8">
+                      <v-img src="/img/SP-webstore-getQty.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>網店首頁-Get產品庫存</i>
@@ -484,10 +482,12 @@
                       使用的商戶有<a
                         href="https://futurebright.shoppoint.mo/"
                         target="_blank"
+                        class="a-yellow"
                         >佳景集團</a
                       >、<a
                         href="https://vinoveritas.shoppoint.mo/"
                         target="_blank"
+                        class="a-yellow"
                         >VINO VERITAS</a
                       >等。
                     </li>
@@ -747,6 +747,10 @@ li {
 
 .a-white {
   color: white;
+}
+
+.a-yellow {
+  color: yellow;
 }
 
 .hovered {
