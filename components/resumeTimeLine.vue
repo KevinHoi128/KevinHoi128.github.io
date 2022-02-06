@@ -127,7 +127,7 @@
                   <v-col cols="7">
                     <v-tooltip left eager>
                       <template #activator="{ on, attrs }">
-                        <strong v-bind="attrs" v-on="on" class="hovered"
+                        <strong class="hovered" v-bind="attrs" v-on="on"
                           >第四屆中國＂互聯網+＂大學生創新創業比賽銀獎</strong
                         >
                       </template>
@@ -149,7 +149,7 @@
                   <v-col cols="7">
                     <v-tooltip left eager>
                       <template #activator="{ on, attrs }">
-                        <strong v-bind="attrs" v-on="on" class="hovered"
+                        <strong class="hovered" v-bind="attrs" v-on="on"
                           >IET Certificate</strong
                         >
                       </template>
@@ -171,7 +171,7 @@
                   <v-col cols="7">
                     <v-tooltip left eager>
                       <template #activator="{ on, attrs }">
-                        <strong v-bind="attrs" v-on="on" class="hovered"
+                        <strong class="hovered" v-bind="attrs" v-on="on"
                           >電腦技術員專業資格</strong
                         >
                       </template>
@@ -193,7 +193,7 @@
                   <v-col cols="7">
                     <v-tooltip left eager>
                       <template #activator="{ on, attrs }">
-                        <strong v-bind="attrs" v-on="on" class="hovered"
+                        <strong class="hovered" v-bind="attrs" v-on="on"
                           >Microsoft Office Specialist for Office Excel
                           2010</strong
                         >
