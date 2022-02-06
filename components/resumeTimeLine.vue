@@ -337,33 +337,129 @@
 
                   <v-card>
                     <v-card-title class="text-h5 black lighten-2">
-                      <a
-                        href="https://www.shoppoint.mo/"
-                        target="_blank"
-                        class="a-white"
-                        >商幫</a
-                      >
+                      <v-row>
+                        <v-col cols="6">
+                          <a
+                            href="https://www.shoppoint.mo/"
+                            target="_blank"
+                            class="a-white"
+                            >商幫</a
+                          >
+                        </v-col>
+
+                        <v-col cols="6">
+                          <div class="text-right">
+                            <v-dialog
+                              v-model="dialogControlForTools"
+                              max-width="256"
+                            >
+                              <template #activator="{ on, attrs }">
+                                <v-btn icon v-bind="attrs" v-on="on">
+                                  <v-icon>mdi-tools</v-icon>
+                                </v-btn>
+                              </template>
+
+                              <v-card>
+                                <v-card-title class="text-h5 black lighten-2">
+                                  商幫網站
+                                </v-card-title>
+                                <v-card-text>
+                                  <p class="mt-4">
+                                    <a
+                                      href="https://fs-dev.shoppoint.xyz"
+                                      target="_blank"
+                                      >Flash sale store</a
+                                    >
+                                  </p>
+                                  <p>
+                                    <a
+                                      href="https://alpha.shoppoint.xyz/"
+                                      target="_blank"
+                                      >Webstore</a
+                                    >
+                                  </p>
+                                  <p>
+                                    <a
+                                      href="https://dev-sp-merchant.alphasolution.com.mo/login"
+                                      target="_blank"
+                                      >Merchant-portal</a
+                                    >
+                                  </p>
+                                  <p>
+                                    <a
+                                      href="http://dev-sp-admin.alphasolution.com.mo/login"
+                                      target="_blank"
+                                      >Admin-portal</a
+                                    >
+                                  </p>
+                                </v-card-text>
+
+                                <v-divider></v-divider>
+
+                                <v-card-actions>
+                                  <v-spacer></v-spacer>
+                                  <v-btn
+                                    color="primary"
+                                    text
+                                    @click="dialogControlForTools = false"
+                                  >
+                                    OK
+                                  </v-btn>
+                                </v-card-actions>
+                              </v-card>
+                            </v-dialog>
+                          </div>
+                        </v-col>
+                      </v-row>
                     </v-card-title>
 
                     <v-card-text>
+                      <v-img src="/img/sp/SP-product-index.png" class="mt-8">
+                      </v-img>
+                      <div class="text-center mb-8">
+                        <i>商家後台-產品首頁</i>
+                      </div>
+
                       <v-img
-                        src="/img/shop.forward-fashion.com.png"
+                        src="/img/sp/SP-product-realtime-storage.png"
                         class="mt-8"
                       >
                       </v-img>
                       <div class="text-center mb-8">
-                        <i>網店首頁</i>
+                        <i>商家後台-實時庫存</i>
                       </div>
 
-                      <v-img src="/img/Bearbrick-reg.png" class="mt-8"> </v-img>
-                      <div class="text-center mb-8">
-                        <i>註冊</i>
-                      </div>
-
-                      <v-img src="/img/Bearbrick-login.png" class="mt-8">
+                      <v-img src="/img/sp/SP-product-QRcode.png" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
-                        <i>登入</i>
+                        <i>商家後台-產品QRCODE</i>
+                      </div>
+
+                      <v-img
+                        src="/img/sp/SP-product-QRcodeChangeByReferrerLink.png"
+                        class="mt-8"
+                      >
+                      </v-img>
+                      <div class="text-center mb-8">
+                        <i>商家後台-產品QRCODE隨推薦人改變</i>
+                      </div>
+
+                      <v-img src="/img/sp/SP-generate-JSON.png" class="mt-8">
+                      </v-img>
+                      <div class="text-center mb-8">
+                        <i>商家後台-生成靜態JSON資料</i>
+                      </div>
+
+                      <v-img src="/img/sp/SP-webstore-getJson.png" class="mt-8">
+                      </v-img>
+                      <div class="text-center mb-8">
+                        <i>網店首頁-Get JSON資料渲染網頁</i>
+                      </div>
+
+                      <v-img src="/img/sp/SP-webstore-getQty.png" class="mt-8">
+                      </v-img>
+                      <div class="text-center mb-8">
+                        <i>網店首頁-Get產品庫存</i>
                       </div>
                     </v-card-text>
 
@@ -513,6 +609,7 @@ export default {
       dialogControlForFirst: false,
       dialogControlForSecond: false,
       dialogControlForThird: false,
+      dialogControlForTools: false,
       frontEndSkillStack: [
         {
           name: 'Vue.js',

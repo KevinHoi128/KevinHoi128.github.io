@@ -16,8 +16,7 @@
         </v-card>
       </v-row>
 
-      <!-- v-if="isCorrectPassword" -->
-      <v-row justify="center" align="center">
+      <v-row v-if="isCorrectPassword" justify="center" align="center">
         <v-col cols="auto">
           <Resume-time-line></Resume-time-line>
         </v-col>
@@ -126,3 +125,6 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+</style>
