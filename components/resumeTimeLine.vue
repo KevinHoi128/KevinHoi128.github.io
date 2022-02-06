@@ -241,19 +241,23 @@
                     </v-card-title>
 
                     <v-card-text>
-                      <v-img src="/img/IPIM-VoicReco.png" class="mt-8"> </v-img>
+                      <v-img src="/img/ipim/IPIM-VoicReco.PNG" class="mt-8">
+                      </v-img>
                       <div class="text-center mb-8">
                         <i>網站無障礙功能 - 語音朗讀</i>
                       </div>
 
-                      <v-img src="/img/IPIM-online-calculator.png" class="mt-8">
+                      <v-img
+                        src="/img/ipim/IPIM-online-calculator.PNG"
+                        class="mt-8"
+                      >
                       </v-img>
                       <div class="text-center mb-8">
                         <i>線上模擬計算器</i>
                       </div>
 
                       <v-img
-                        src="/img/IPIM-online-calculator-detail.png"
+                        src="/img/ipim/IPIM-online-calculator-detail.PNG"
                         class="mt-8"
                       >
                       </v-img>
@@ -261,18 +265,22 @@
                         <i>線上模擬計算器-計算</i>
                       </div>
 
-                      <v-img src="/img/IPIM-Map.png" class="mt-8"> </v-img>
+                      <v-img src="/img/ipim/IPIM-Map.PNG" class="mt-8"> </v-img>
                       <div class="text-center mb-8">
                         <i>大灣區頁面地圖</i>
                       </div>
 
-                      <v-img src="/img/IPIM-Map-DoubleBind.png" class="mt-8">
+                      <v-img
+                        src="/img/ipim/IPIM-Map-DoubleBind.PNG"
+                        class="mt-8"
+                      >
                       </v-img>
                       <div class="text-center mb-8">
                         <i>大灣區頁面地圖-雙向響應</i>
                       </div>
 
-                      <v-img src="/img/IPIM-Botsify.png" class="mt-8"> </v-img>
+                      <v-img src="/img/ipim/IPIM-Botsify.PNG" class="mt-8">
+                      </v-img>
                       <div class="text-center mb-8">
                         <i>聊天機械人客服</i>
                       </div>
@@ -412,14 +420,14 @@
                     </v-card-title>
 
                     <v-card-text>
-                      <v-img src="/img/SP-product-index.png" class="mt-8">
+                      <v-img src="/img/sp/SP-product-index.PNG" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-產品首頁</i>
                       </div>
 
                       <v-img
-                        src="/img/SP-product-realtime-storage.png"
+                        src="/img/sp/SP-product-realtime-storage.PNG"
                         class="mt-8"
                       >
                       </v-img>
@@ -427,14 +435,14 @@
                         <i>商家後台-實時庫存</i>
                       </div>
 
-                      <v-img src="/img/SP-product-QRcode.png" class="mt-8">
+                      <v-img src="/img/sp/SP-product-QRcode.PNG" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-產品QRCODE</i>
                       </div>
 
                       <v-img
-                        src="/img/SP-product-QRcodeChangeByReferrerLink.png"
+                        src="/img/sp/SP-product-QRcodeChangeByReferrerLink.PNG"
                         class="mt-8"
                       >
                       </v-img>
@@ -442,19 +450,19 @@
                         <i>商家後台-產品QRCODE隨推薦人改變</i>
                       </div>
 
-                      <v-img src="/img/SP-generate-JSON.png" class="mt-8">
+                      <v-img src="/img/sp/SP-generate-JSON.PNG" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>商家後台-生成靜態JSON資料</i>
                       </div>
 
-                      <v-img src="/img/SP-webstore-getJson.png" class="mt-8">
+                      <v-img src="/img/sp/SP-webstore-getJson.PNG" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>網店首頁-Get JSON資料渲染網頁</i>
                       </div>
 
-                      <v-img src="/img/SP-webstore-getQty.png" class="mt-8">
+                      <v-img src="/img/sp/SP-webstore-getQty.PNG" class="mt-8">
                       </v-img>
                       <div class="text-center mb-8">
                         <i>網店首頁-Get產品庫存</i>
@@ -610,37 +618,70 @@ export default {
       dialogControlForSecond: false,
       dialogControlForThird: false,
       dialogControlForTools: false,
+      //   frontEndSkillStack: [
+      //     {
+      //       name: 'Vue.js',
+      //       marks: '85',
+      //       description:
+      //         '主力開發時使用,輔以Nuxt.js、Vuex、Buefy/Bulma、Vuetify開發。',
+      //       color: 'green accent-4',
+      //     },
+      //     {
+      //       name: 'React.js',
+      //       marks: '80',
+      //       description: '曾於修改Strapi CMS源碼時使用，接觸較少。',
+      //       color: 'orange lighten-1',
+      //     },
+      //     {
+      //       name: 'JavaScript',
+      //       marks: '70',
+      //       description: '熟悉以es6開發。',
+      //       color: 'teal darken-1',
+      //     },
+      //     {
+      //       name: 'HTML5',
+      //       marks: '60',
+      //       description: '',
+      //       color: 'light-blue darken-3',
+      //     },
+      //     {
+      //       name: 'CSS3',
+      //       marks: '50',
+      //       description: '',
+      //       color: 'blue darken-4',
+      //     },
+      //   ],
       frontEndSkillStack: [
         {
           name: 'Vue.js',
           marks: '85',
           description:
             '主力開發時使用,輔以Nuxt.js、Vuex、Buefy/Bulma、Vuetify開發。',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'React.js',
           marks: '50',
           description: '曾於修改Strapi CMS源碼時使用，接觸較少。',
-          color: 'yellow',
+          color: 'blue darken-4',
         },
         {
           name: 'JavaScript',
           marks: '85',
           description: '熟悉以es6開發。',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'HTML5',
           marks: '85',
           description: '',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'CSS3',
           marks: '80',
           description: '',
-          color: 'blue lighten-3',
+          color: 'orange lighten-1',
         },
       ],
       backEndSkillStack: [
@@ -648,31 +689,31 @@ export default {
           name: 'Node.js',
           marks: '70',
           description: '用於開發後端API。',
-          color: 'green darken-3',
+          color: 'teal darken-1',
         },
         {
           name: 'MongoDB',
           marks: '70',
           description: '數據庫使用,輔以MongooseJS。',
-          color: 'green darken-3',
+          color: 'teal darken-1',
         },
         {
           name: 'PHP',
           marks: '60',
           description: '維護舊項目時使用,輔以Laravel。',
-          color: 'green accent-2',
+          color: 'light-blue darken-3',
         },
         {
           name: 'SQL',
           marks: '85',
           description: '',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'Redis',
           marks: '85',
           description: '使用於優化高并發量秒殺活動的商品庫存。',
-          color: 'blue',
+          color: 'green accent-4',
         },
       ],
       relatedSkillStack: [
@@ -680,44 +721,44 @@ export default {
           name: 'Git',
           marks: '85',
           description: '使用Gitlab及Gitte托管項目，使用	Git進行版本控制。',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'Docker',
           marks: '70',
           description: '配合Docker Composer使用。',
-          color: 'green darken-3',
+          color: 'teal darken-1',
         },
         {
           name: 'Jest',
           marks: '85',
           description: '為確保後端API正常、 開發前端Unit Test時使用。',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'Python',
           marks: '60',
           description:
             '於Botsify設置聊天機械人，使用	selenium開發自動化錄入程式。開發自動化錄入程式。',
-          color: 'green accent-2',
+          color: 'light-blue darken-3',
         },
         {
           name: '阿里雲',
           marks: '85',
           description: '使用Function Compute、OSS、	MNS、API Gateway開發。',
-          color: 'blue',
+          color: 'green accent-4',
         },
         {
           name: 'Excel',
           marks: '70',
           description: '熟悉使用各類function及數據清洗。',
-          color: 'green darken-3',
+          color: 'teal darken-1',
         },
         {
           name: 'Linux',
           marks: '85',
           description: '使用Ubuntu及開發Shell script。',
-          color: 'blue',
+          color: 'green accent-4',
         },
       ],
     }
