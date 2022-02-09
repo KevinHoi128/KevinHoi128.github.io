@@ -28,6 +28,20 @@
             <v-list-item-title>履歷表</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item
+          link
+          to="/threeJsDemo"
+          aria-label="ThreeJs demo"
+          tabindex="2"
+        >
+          <v-list-item-action>
+            <v-icon color="white darken-2">mdi-rotate-3d</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>ThreeJs Demo</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
