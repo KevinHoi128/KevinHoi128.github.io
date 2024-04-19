@@ -32,4 +32,4 @@ jobs:
           external_repository: KevinHoi128/KevinHoi128.github.io
           publish_branch: Main
           user_name: 'KevinHoi128[bot]'
-          # user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_email: 'krose.kachon@gmail.com'
