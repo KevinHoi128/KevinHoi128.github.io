@@ -93,7 +93,7 @@
 <script>
 import VerifyInputField from '@/components/forms/verifyInputField'
 import ResumeTimeLine from '@/components/resumeTimeLine'
-import DoomCaptcha from '@/components/DoomCaptcha.vue'
+import DoomCaptcha from '@/components/doomCaptcha'
 export default {
   components: {
     VerifyInputField,
