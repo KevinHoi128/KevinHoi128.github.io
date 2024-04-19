@@ -1,7 +1,25 @@
 <template>
   <v-main>
     <v-container fill-height fluid>
-      <v-row v-if="!isCorrectPassword" justify="center" align="center">
+      <v-row v-if="!doomCaptchaStatus" justify="center" align="center">
+        <v-col cols="auto">DOOM Captcha－完成遊戲後繼續</v-col></v-row
+      >
+      <v-row v-if="!doomCaptchaStatus" justify="center" align="center">
+        <v-col cols="auto"
+          ><doom-captcha
+            label="完成遊戲繼續"
+            :enemies="5"
+            countdown="30"
+            @captcha-done="onCaptchaDone"
+          ></doom-captcha
+        ></v-col>
+      </v-row>
+
+      <v-row
+        v-if="!isCorrectPassword && doomCaptchaStatus"
+        justify="center"
+        align="center"
+      >
         <v-card elevation="2" outlined>
           <v-col cols="auto">
             <v-card-title class="pb-0 justify-center font-weight-bold"
@@ -75,10 +93,12 @@
 <script>
 import VerifyInputField from '@/components/forms/verifyInputField'
 import ResumeTimeLine from '@/components/resumeTimeLine'
+import DoomCaptcha from '@/components/DoomCaptcha.vue'
 export default {
   components: {
     VerifyInputField,
     ResumeTimeLine,
+    DoomCaptcha,
   },
   data() {
     return {
@@ -89,6 +109,7 @@ export default {
       snackbarPopupSuccess: false,
       snackbarPopupFailure: false,
       overlay: false,
+      doomCaptchaStatus: false,
     }
   },
 
@@ -101,6 +122,11 @@ export default {
   },
 
   methods: {
+    onCaptchaDone(success) {
+      if (success) {
+        this.doomCaptchaStatus = true
+      }
+    },
     checkPassword(code) {
       if (code === this.password) {
         this.overlay = true
@@ -126,5 +152,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

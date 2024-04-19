@@ -1,0 +1,35 @@
+name: Build Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: KevinHoi128/kweb@master
+
+      - name: Install 🔧
+        run:  npm install
+             
+      - name: Build 🔧
+        run:  npm run build
+
+      - name: Generate 🔧
+        run:  npm run generate
+
+         # 部署到 GitHub Pages
+      - name: Deploy 🚀
+        uses: KevinHoi128/KevinHoi128.github.io@main
+          with:
+            # personal_token: ${{ secrets.PERSONAL_TOKEN }}
+            publish_dir: ./dist
+            # external_repository: SigureMo/SigureMo.github.io
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_branch: main
+            # cname: nyakku.moe
+            # user_name: 'github-actions[bot]'
+            # user_email: 'github-actions[bot]@users.noreply.github.com'

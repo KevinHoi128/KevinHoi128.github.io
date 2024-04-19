@@ -103,7 +103,7 @@ export default {
     darkMode: true,
     soms: [
       { icon: 'mdi-github', href: 'https://github.com/KevinHoi128' },
-      { icon: 'mdi-git', href: 'https://gitee.com/kh128' },
+      // { icon: 'mdi-git', href: 'https://gitee.com/kh128' },
       {
         icon: 'mdi-codepen',
         href: 'https://codepen.io/kevinhoi128-the-encoder',
