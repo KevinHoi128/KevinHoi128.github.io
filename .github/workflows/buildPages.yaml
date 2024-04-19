@@ -10,26 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: KevinHoi128/kweb@master
+        uses: actions/checkout@v2
 
-      - name: Install 🔧
-        run:  npm install
-             
-      - name: Build 🔧
-        run:  npm run build
+      - name: Install dependencies 💾
+        run: npm install
 
-      - name: Generate 🔧
-        run:  npm run generate
+      - name: Build project 🔧
+        run: npm run generate
 
-         # 部署到 GitHub Pages
-      - name: Deploy 🚀
-        uses: KevinHoi128/KevinHoi128.github.io@main
-          with:
-            # personal_token: ${{ secrets.PERSONAL_TOKEN }}
-            publish_dir: ./dist
-            # external_repository: SigureMo/SigureMo.github.io
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_branch: main
-            # cname: nyakku.moe
-            # user_name: 'github-actions[bot]'
-            # user_email: 'github-actions[bot]@users.noreply.github.com'
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./dist
+          external_repository: KevinHoi128/KevinHoi128.github.io
+          publish_branch: Main
+          user_name: 'KevinHoi128[bot]'
+          # user_email: 'github-actions[bot]@users.noreply.github.com'
