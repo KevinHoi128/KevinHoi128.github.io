@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt --port 5566",
+    "bg": "nuxt build && nuxt generate",
     "build": "nuxt build",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
