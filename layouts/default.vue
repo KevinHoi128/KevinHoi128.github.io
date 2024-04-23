@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- <SpeedInsights /> -->
     <v-navigation-drawer v-model="drawer" app clipped>
       <v-card>
         <v-card-title class="home" @click="backToHome">
@@ -96,6 +97,8 @@
 </template>
 
 <script>
+// import { SpeedInsights } from '@vercel/speed-insights/nuxt'
+
 export default {
   name: 'App',
   data: () => ({

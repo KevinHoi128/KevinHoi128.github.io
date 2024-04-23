@@ -115,6 +115,10 @@ export default {
 
   created() {
     this.isCorrectPassword = false
+
+    this.detectMobile()
+      ? (this.doomCaptchaStatus = true)
+      : (this.doomCaptchaStatus = false)
     const date = new Date()
     const day = String(date.getDate()).padStart(2, '0')
     const month = String(date.getMonth() + 1).padStart(2, '0')
@@ -147,6 +151,32 @@ export default {
           })
         }, 800)
       }
+    },
+
+    detectMobile() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera
+
+      // 检查用户代理字符串中是否包含手机特定的关键词
+      if (/android/i.test(userAgent)) {
+        return true // 对于Android设备
+      }
+
+      // iOS设备
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return true // 对于iOS设备
+      }
+
+      // 包含'Windows Phone'的为Windows手机
+      if (/Windows Phone/i.test(userAgent)) {
+        return true // 对于Windows手机
+      }
+
+      // 包含'Mobile'这一个更通用的关键词，捕获其他手机
+      if (/Mobile/i.test(userAgent)) {
+        return true // 对于其他标记为Mobile的设备
+      }
+
+      return false // 默认不是手机
     },
   },
 }
